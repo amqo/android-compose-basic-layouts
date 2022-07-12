@@ -244,10 +244,12 @@ private fun SootheBottomNavigation(modifier: Modifier = Modifier) {
 // Step: MySoothe App - Scaffold
 @Composable
 fun MySootheApp() {
-    Scaffold(
-        bottomBar = { SootheBottomNavigation() }
-    ) {
-        HomeScreen()
+    MySootheTheme {
+        Scaffold(
+            bottomBar = { SootheBottomNavigation() }
+        ) {
+            HomeScreen()
+        }
     }
 }
 
@@ -314,9 +316,7 @@ fun FavoriteCollectionsGridPreview() {
 @Composable
 fun AlignYourBodyRowPreview() {
     MySootheTheme {
-        AlignYourBodyRow(
-
-        )
+        AlignYourBodyRow()
     }
 }
 
